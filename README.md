@@ -2,7 +2,7 @@
 # Word Games Helper
 
 ## Introduction
-The Word Games Helper, written by Michael Wanyoike, is a simple script written in ES6 JavaScript. The script is used to help users play a Mobile game called 4 Pics 1 Word. It uses a couple of parameters to generate a list of words that can be a solution for a specific puzzle.
+The Word Games Helper, written by Michael Wanyoike, is a simple script written in JavaScript. The script is used to help users play a Mobile game called 4 Pics 1 Word. It uses a couple of parameters to generate a list of words that can be a solution for a specific puzzle.
 
 ## Requirements
 This script requires NodeJS version 4.6 or greater to be installed
