@@ -10,12 +10,12 @@ let targetLength = process.argv[2];
 let targetClues =  process.argv[3].split("");
 
 if(!targetLength || !targetClues) {
-	console.log('Input Paramaters have not been provided (Length and Clues)')
+	console.log('Input Parameters have not been provided (Length and Clues)')
 	return;
 }
 
 /*****************************************************************************/
-/* GLOBAL letIABLES */
+/* GLOBAL VARIABLES */
 /*****************************************************************************/
 const alphabet = 'a,b,c,d,e,f,g,h,i,j,k,l,m,o,n,p,q,r,s,t,u,v,w,x,y,z,\'';
 const dictionaries = ['american-english','cracklib-small'];
@@ -29,11 +29,11 @@ let dictionary = dictionaries[0];
 const dict = fs.readFileSync(dictionary).toString().split('\n');
 console.log("DICTIONARY [" + dictionary + "] with [" + dict.length + "] WORDS");
 
-//PRINT OUT letIABLES
+//PRINT OUT VARIABLES
 console.log("LENGTH PARAMETERS : [" + targetLength + "]\n");
 console.log("CLUES PARAMETER : [" + targetClues + "]\n");
 
-// Pre-process data for use by letiables
+// Pre-process data for use by VARIABLES
 let banCharacterList = buildBanCharacterList(); // Generate list of alphabet characters not in used in the CLUES parameter
 let targetCluesMap = buildDuplicateCharMap(targetClues); // Convert CLUES parameter into a Map specifying duplicates as an integer value
 
